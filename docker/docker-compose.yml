@@ -1,0 +1,18 @@
+version: "3.8"
+
+services:
+  kalibr:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: kalibr:noetic
+    container_name: kalibr_run
+    environment:
+      - DISPLAY=${DISPLAY}
+      - KALIBR_MANUAL_FOCAL_LENGTH_INIT=1
+    volumes:
+      - /tmp/.X11-unix:/tmp/.X11-unix:rw
+      - ../:/data:rw          # mounts kalibr_setup/ as /data inside container
+    network_mode: host
+    stdin_open: true
+    tty: true

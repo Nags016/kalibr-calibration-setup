@@ -1,0 +1,30 @@
+Calibration results 
+====================
+Camera-system parameters:
+cam0 (/d455/infra1/image_rect_raw):
+    type: <class 'aslam_cv.libaslam_cv_python.DistortedPinholeCameraGeometry'>
+    distortion: [ 0.00688765 -0.02056865  0.00181151 -0.00180307] +- [0.00203479 0.00263851 0.00030731 0.00037355]
+    projection: [386.86170597 387.19922665 318.89001813 245.12240747] +- [0.94475922 0.94816966 0.60822242 0.52669364]
+    reprojection error: [-0.000015, 0.000002] +- [0.512648, 0.725538]
+
+cam1 (/d455/infra2/image_rect_raw):
+    type: <class 'aslam_cv.libaslam_cv_python.DistortedPinholeCameraGeometry'>
+    distortion: [-0.00927778  0.01224161  0.00160382  0.00001754] +- [0.0019335  0.00236709 0.00037919 0.00040259]
+    projection: [385.99567157 387.15166954 322.79566516 245.73520946] +- [0.94256297 0.94584368 0.60278336 0.59994877]
+    reprojection error: [0.000014, -0.000001] +- [0.459971, 0.722052]
+
+baseline T_1_0:
+    q: [-0.0006524   0.0046194  -0.00038499  0.99998904] +- [0.00128259 0.00124102 0.00014454]
+    t: [-0.09494991 -0.00023235 -0.00019737] +- [0.00003073 0.00003263 0.00012205]
+
+
+
+Target configuration
+====================
+
+  Type: aprilgrid
+  Tags: 
+    Rows: 6
+    Cols: 6
+    Size: 0.03 [m]
+    Spacing 0.009 [m]

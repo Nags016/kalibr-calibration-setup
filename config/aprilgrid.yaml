@@ -1,0 +1,5 @@
+target_type: 'aprilgrid'
+tagCols: 6
+tagRows: 6
+tagSize: 0.030       # tag side length in meters
+tagSpacing: 0.3      # ratio of spacing to tag size (spacing = 0.009 m)
