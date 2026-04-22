@@ -1,0 +1,6 @@
+# Bag files are too large for GitHub
+bags/*.bag
+
+# Python
+__pycache__/
+*.pyc
