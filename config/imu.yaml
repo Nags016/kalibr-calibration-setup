@@ -1,6 +1,6 @@
 rostopic: /d455/imu
 update_rate: 200
-accelerometer_noise_density: 1.4e-2
-accelerometer_random_walk: 4.0e-4
-gyroscope_noise_density: 8.0e-4
-gyroscope_random_walk: 2.2e-5
+accelerometer_noise_density: 0.000820490458901
+accelerometer_random_walk: 6.26836707297e-05
+gyroscope_noise_density: 0.000296428580914
+gyroscope_random_walk: 2.20779386754e-05

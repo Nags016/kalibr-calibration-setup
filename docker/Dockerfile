@@ -21,7 +21,7 @@ RUN mkdir -p $WORKSPACE/src && \
     catkin init && \
     catkin config --extend /opt/ros/noetic && \
     catkin config --cmake-args -DCMAKE_BUILD_TYPE=Release && \
-    catkin build -j$(nproc)
+    catkin build -j2
 
 # Mount point for user data
 VOLUME ["/data"]

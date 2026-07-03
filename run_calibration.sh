@@ -25,10 +25,10 @@ CAM_CHAIN_YAML="/data/calibration_results/cam_calib/cam_calib-camchain.yaml"
 CAM_OUTPUT_DIR="/data/calibration_results/cam_calib"
 IMU_OUTPUT_DIR="/data/calibration_results/imu_calib"
 
-# ── Topics ───────────────────────────────────────────────────────────────────
-CAM0_TOPIC="/d455/infra1/image_rect_raw"
-CAM1_TOPIC="/d455/infra2/image_rect_raw"
-IMU_TOPIC="/d455/imu"
+# ── Topics (Override these using environment variables if needed) ────────────
+CAM0_TOPIC="${CAM0_TOPIC:-/d455/infra1/image_rect_raw}"
+CAM1_TOPIC="${CAM1_TOPIC:-/d455/infra2/image_rect_raw}"
+IMU_TOPIC="${IMU_TOPIC:-/d455/imu}"
 
 # ── Helpers ──────────────────────────────────────────────────────────────────
 build_image() {
